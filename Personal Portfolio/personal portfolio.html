@@ -3,6 +3,7 @@
     <head>
         <meta name="Author" content="Srikanth Reddy">
         <meta name ="description" content="This Page is about me and my Professional skills ">
+        <meta name="viewport" content="width=device-width ,initial-scale=1.0">
         <link rel="stylesheet" href="personal portfolio.css">
         <link rel="icon" href="Img/react icon.png">
         <Title>Srikanth's Portfolio</Title>
@@ -12,11 +13,14 @@
         <!--Home Page-->
         <header>
             <nav>
-                <a id="logo" href="#">SRedCodes</a>
-                <a class="navBar" href="#testimony">Client Testimonials</a>
-                <a class="navBar" href="#projects">Projects Handled</a>
-                <a class="navBar" href="#about-me">Resume</a>
-                <a class="navBar" href="#blog">Blog</a>
+                <div id="nav-bar">
+                    <a id="navLogo" href="#">SRedCodes</a>
+                    <a class="navLinkElements" href="#testimony">Testimonials</a>
+                    <a class="navLinkElements" href="#projects">Projects</a>
+                    <a class="navLinkElements" href="#about-me">Resume</a>
+                    <a class="navLinkElements" href="#blog">Blog</a>
+                    <a class="navLinkElements" href="#contact">Contact</a>
+                </div>
             </nav>
             <div id="head-main">
                 <h2>I'm Srikanth Reddy</h2>
@@ -25,34 +29,42 @@
             </div>
         </header>
         <main>
+           
             <article id="intro">
                 <h2>Intro</h2>
-                    <img src="Img/SR Profile Picture.JPG"  width="150" height="192"/>
-                    <p>Name : Srikanth Reddy</p>
-                    <p>Job Profile : Frontend Developer</p>
-                    <p>Email : srika.kodes@gmail.com</p>
-                    <p>Phone : 85229xxxxx</p>
-                    <p>twitter : Sample_tw</p>
-                    <p>Skills:&nbsp;&nbsp;&nbsp;<em><strong>HTML, CSS , Javascript , ReactJS </strong></em></p>
+                        <img src="Img/SR Profile Picture.JPG"  width="150" height="192"/>
+                            <p>Name : Srikanth Reddy</p>
+                            <p>Job Profile : Frontend Developer</p>
+                            <p>Email : srika.kodes@gmail.com</p>
+                            <p>Phone : 85229xxxxx</p>
+                            <p>twitter : Sample_tw</p>
+                            <p>Skills:&nbsp;&nbsp;&nbsp;<em><strong>HTML, CSS , Javascript , ReactJS </strong></em></p>
                     <aside>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur neque voluptatem aperiam quidem quia in! Dicta rem, sed laboriosam eaque atque numquam corrupti aperiam, ex sunt enim id cupiditate voluptates.</aside>
+                    <div id="intro-work">
+                        <p class="intro-work">20 Projects completed</p>
+                        <p class="intro-work">3+ Years of Experience</p>
+                        <p class="intro-work">15 Clients Handled</p> 
+                    </div>
                 <hr>
             </article>
+            
             <article id="testimony">
                 <h2>Client Testimonials</h2>
                     <figure>
                         <img src="Img/SR Profile Picture.JPG" width="150" height="192" alt="client photo" loading="lazy"/>
                         <figcaption>Srikanth Reddy</figcaption>
                     </figure>
-                        <p>SAMPLE TEXT REVIEW</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi unde, quis omnis quisquam in quibusdam hic qui beatae excepturi autem saepe veritatis consectetur animi a praesentium magni. Distinctio, quaerat obcaecati!</p>
                         <img src="Img/quotation marks.png" width="50" height="47" alt="quotation mark" loading="lazy"/><br>
                     <figure>
                         <img src="Img/SR Profile Picture.JPG" width="150" height="192" alt="client photo" loading="lazy"/>
                         <figcaption>Srikanth Reddy</figcaption>
                     </figure>
-                        <p>SAMPLE TEXT REVIEW 2</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla voluptatibus numquam omnis inventore repellendus a, doloremque rem voluptatum officia sapiente fugiat fugit doloribus facere libero reprehenderit tenetur odio dolor iure?</p>
                         <img src="Img/quotation marks.png" width="50" height="47" alt="quotation mark" loading="lazy"/>
                 <hr>
             </article>
+            
             <article id="about-me">
                 <h2> Resume</h2>
                     <table>
@@ -97,8 +109,9 @@
                     </table>
                     <hr>
             </article>
+            
             <article id="blog">
-            <h2>BLOG & Recent Activities</h2>
+            <h2>Blog & Recent Activities</h2>
                 <section id="projects">
                     <h3>Projects Handled</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat repellendus blanditiis est quis quisquam voluptatem architecto laudantium ipsam culpa. Incidunt, nobis. Sunt esse voluptate cumque aspernatur culpa? Dignissimos, non velit?<br>
@@ -112,17 +125,20 @@
                     <h3>Github Contributions</h3>
                 </section>
             </article>
+        
         </main>
+        
         <footer>
             <div>
                 <a href="#intro">Intro</a><br>
                 <a href="#testimony">Client Testimonials</a><br>
-                <a href="#projects">Projects Handled</a><br>
+                <a href="#projects">Projects</a><br>
                 <a href="#about-me">Resume</a><br>
                 <a href="#blog">Blog</a><br>
                 Built with Passion by Srikanth Reddy <br>
                 &#169 2023 SRedCodes  
             </div>
         </footer>
+    
     </body>
 </html>

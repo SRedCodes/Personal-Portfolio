@@ -16,6 +16,7 @@ body{
      top: 60px;
      font-weight: 900;
 }
+
 nav{
     font-weight: 400;
     height: 50px;
@@ -23,26 +24,35 @@ nav{
     font-size: 16px;
     position: fixed;
     top: 0px;
-    width: 100vw;
+    width: 99vw;
     z-index: 9999;
+}
 
-}
-.navBar{
-    margin: 10px;
-    color: white;
-    text-transform: capitalize;
-}
-#logo{
-    margin-right: 700px;
-    margin-left: 10px;
+#navLogo{
     color:white ;
-    font-size: 25px;
+    font-size: 28px;
     font-weight: 600;
     text-decoration: none;
+    margin-right: 500px;
 }
+
+.navLinkElements{
+    text-transform: uppercase;
+    font-weight: 600;
+
+}
+
+#nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:baseline;
+}
+
 main{
     margin: 60px 0px 5px 0px;
 }
+
 footer{
     bottom: 0px;
     background-color: #0f1111;
@@ -59,4 +69,14 @@ h2{
     text-align: center;
     text-transform: capitalize;
     color: rgb(50, 135, 230);
+}
+.intro-work{
+    height: 100px;
+    width: 100px;
+    padding: 5px;
+    margin: 20px;
+    display: inline-block;
+}
+#intro-work{
+    text-align: center;
 }
