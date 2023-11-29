@@ -4,7 +4,8 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 body{
-    background-image: url(Img/kseniya.jpg);
+    /* background-image: url(Img/kseniya.jpg); */
+    background-color: #f5f5f5;
     background-size: cover;
     background-position: center;
 }
@@ -24,16 +25,18 @@ body{
 nav{
     font-weight: 400;
     height: 8vh;
-    background-color: rgb(50, 135, 230);
+    /* background-color: rgb(50, 135, 230); */
+    background-color: #f5f5f5;
     font-size: 16px;
     position: fixed;
     top: 0px;
     width: 100vw;
     z-index: 9999;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
 }
 
 #navLogo{
-    color:white ;
+    color:rgb(50, 135, 230) ;
     font-size: 28px;
     font-weight: 600;
     text-decoration: none;
@@ -45,9 +48,10 @@ nav{
     transition-timing-function: ease-in-out;
 } */
 
-.navLinkElements{
+.navBar-LinkElements{
     text-transform: uppercase;
     font-weight: 600;
+    color: rgb(50, 135, 230);
 
 }
 
@@ -70,7 +74,6 @@ footer{
     margin-top: 5px;
 }
 a{
-    color: white;
     text-decoration: none;
 
 }
@@ -84,11 +87,81 @@ h2{
     width: 100px;
     padding: 5px;
     margin: 20px;
-    border: 2px solid black;
-    /* display: inline-block; */
+    border-radius: 10%;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
 }
 #intro-work-tiles{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+}
+.contact-tiles{
+    background-color: chocolate;
+    border: 1px solid rgb(50, 135, 230);
+    border-radius: 50px;
+}
+#contact-me{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+}
+#get-in-touch{
+    width: 30vw;
+    line-height: 2;
+    /* border: 1px solid black; */
+}
+#message-us{
+    line-height: 2.5;
+}
+input{
+    height: 25px;
+}
+#innerDivOne{
+    background-color: #ffffff;
+    width: 50vw;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#innerDivTwo{
+    background-color:#ffffff;
+    width: 50vw;
+    padding: 40px;
+}
+#about-Outer-Div{
+    display: flex;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+    margin: 50px;
+    border-radius: 5%;
+}
+#innerDiv-bioDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+/* #innerDiv-biotextDiv{
+    line-height: 2.5;
+} */
+img{
+    border-radius: 5%;
+}
+#flexDiv-testimony{
+    background-color: #ffffff;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    margin: 50px;
+    padding: 40px;
+}
+.div-clientTestimony{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+}
+#divBlog{
+    margin: 50px;
+    padding: 40px;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+    background-color: #ffffff;
+    border-radius: 25px;
 }
