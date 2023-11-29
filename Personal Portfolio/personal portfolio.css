@@ -9,17 +9,21 @@ body{
     background-position: center;
 }
     
-#head-main{
+#hero-section{
      text-align: center;
      font-size: 40px;
      position: relative;
-     top: 60px;
      font-weight: 900;
+     height: 100vh;
+     display: flex;
+     flex-direction: column;
+    justify-content: center;
+
 }
 
 nav{
     font-weight: 400;
-    height: 50px;
+    height: 8vh;
     background-color: rgb(50, 135, 230);
     font-size: 16px;
     position: fixed;
@@ -35,6 +39,11 @@ nav{
     text-decoration: none;
     margin-right: 500px;
 }
+/* .navLinkElements:hover{
+    text-decoration: underline;
+    transition-duration: 5s;
+    transition-timing-function: ease-in-out;
+} */
 
 .navLinkElements{
     text-transform: uppercase;
@@ -70,13 +79,16 @@ h2{
     text-transform: capitalize;
     color: rgb(50, 135, 230);
 }
-.intro-work{
+.intro-work-tiles{
     height: 100px;
     width: 100px;
     padding: 5px;
     margin: 20px;
-    display: inline-block;
+    border: 2px solid black;
+    /* display: inline-block; */
 }
-#intro-work{
-    text-align: center;
+#intro-work-tiles{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
