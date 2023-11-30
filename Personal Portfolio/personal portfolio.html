@@ -86,7 +86,7 @@
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur neque voluptatem aperiam quidem quia in! Dicta rem, sed laboriosam eaque atque numquam corrupti aperiam, ex sunt enim id cupiditate voluptates. </p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, voluptatibus vitae! Beatae doloribus quo, repellendus vero, cupiditate rerum consectetur porro earum laudantium consequuntur, aspernatur ullam placeat saepe rem eaque voluptatibus.</p>
                             <div id="intro-work-tiles">
-                                <p class="intro-work-tiles">20 Projects completed</p>
+                                <p class="intro-work-tiles"><a href="#projects">20 Projects completed</a></p>
                                 <p class="intro-work-tiles">3+ Years of Experience</p>
                                 <p class="intro-work-tiles">15 Clients Handled</p> 
                             </div>
@@ -168,9 +168,9 @@
                 <div id="divBlog">
                     <section id="projects">
                         <h3>Projects Handled</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat repellendus blanditiis est quis quisquam voluptatem architecto laudantium ipsam culpa. Incidunt, nobis. Sunt esse voluptate cumque aspernatur culpa? Dignissimos, non velit?<br>
-                        Perferendis quis odit eos illo, obcaecati dolorem dignissimos earum! Nam similique ut eveniet illum vero laudantium corporis incidunt maxime at sed earum cum iste cumque, dolor repellendus quo, aut minima?<br>
-                        Maiores ullam nulla corrupti? Qui provident alias officia sint non ratione obcaecati fugit saepe consequuntur ab nesciunt, expedita velit, enim delectus inventore dolores? Accusantium, omnis nostrum at dignissimos asperiores nam?</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat repellendus blanditiis est quis quisquam voluptatem architecto laudantium ipsam culpa. Incidunt, nobis. Sunt esse voluptate cumque aspernatur culpa? Dignissimos, non velit?<br>
+                            Perferendis quis odit eos illo, obcaecati dolorem dignissimos earum! Nam similique ut eveniet illum vero laudantium corporis incidunt maxime at sed earum cum iste cumque, dolor repellendus quo, aut minima?<br>
+                            Maiores ullam nulla corrupti? Qui provident alias officia sint non ratione obcaecati fugit saepe consequuntur ab nesciunt, expedita velit, enim delectus inventore dolores? Accusantium, omnis nostrum at dignissimos asperiores nam?</p>
                     </section>
                     <section>
                         <h3>Certifications</h3>
@@ -183,37 +183,39 @@
             <article id="contact-me">
                 <section>
                 <div id="message-us">
-                    <form action="https://httpbin.org/get" method="get"></form>
+                    <form action="https://httpbin.org/post" method="post">
                         <h3>Write to Us</h3>
                         <p>
-                        <label for="clientName" ></label>
-                        <input type="text" id="clientName" name="clientName" placeholder="Name" size="48">
+                            <label for="clientName" ></label>
+                            <input type="text" id="clientName" name="clientName" placeholder="Name" size="48">
                         </p>
                         <p>
-                        <label for="Email" ></label>
-                        <input type="text" id="Email" name="Email" placeholder="Email" size="48">
+                            <label for="Email" ></label>
+                            <input type="text" id="Email" name="Email" placeholder="Email" size="48">
                         </p>
                         <p>
-                        <label for="Subject" ></label>
-                        <input type="text" id="Subject" name="Subject" placeholder="Subject" size="48">
+                            <label for="Subject" ></label>
+                            <input type="text" id="Subject" name="Subject" placeholder="Subject" size="48">
                         </p>
                         <p>
-                        <label for="Message" ></label>
-                        <textarea type="text" id="Message" name="Message" placeholder="Message" rows="10" cols="50"></textarea>
+                            <label for="Message" ></label>
+                            <textarea type="text" id="Message" name="Message" placeholder="Message" rows="10" cols="50"></textarea>
                         </p>
+                        <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Submit</button>
+                    </form>
                 </div>
                 </section>
                 <section>
                 <div id="get-in-touch">
                     <h3>Get in Touch</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex consequuntur labore error quo dolore et vitae rem expedita voluptatibus molestias consequatur pariatur vel asperiores odio in architecto, animi minima! Quibusdam.</p>
-                    <address>123 washington dc, USA, 503213</address>
-                    <div>(123) 123-1234</div>
-                    <div>contact@gmail.com</div>
-                    <a class="contact-tiles" href="https://www.facebook.com/">fb</a>
-                    <a class="contact-tiles" href="https://www.instagram.com/">insta</a>
-                    <a class="contact-tiles" href="https://www.linkedin.com/">LinkedIn</a>
-                    <a class="contact-tiles" href="https://twitter.com/">Twitter</a>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex consequuntur labore error quo dolore et vitae rem expedita voluptatibus molestias consequatur pariatur vel asperiores odio in architecto, animi minima! Quibusdam.</p>
+                        <address>123 washington dc, USA, 503213</address>
+                        <div>(123) 123-1234</div>
+                        <div>contact@gmail.com</div>
+                        <a class="contact-tiles" href="https://www.facebook.com/">fb</a>
+                        <a class="contact-tiles" href="https://www.instagram.com/">insta</a>
+                        <a class="contact-tiles" href="https://www.linkedin.com/">LinkedIn</a>
+                        <a class="contact-tiles" href="https://twitter.com/">Twitter</a>
                 </div>
                 </section>
             </article>
@@ -222,11 +224,11 @@
         
         <footer>
             <div>
-                <a href="#about">About</a><br>
-                <a href="#testimony">Client Testimonials</a><br>
-                <a href="#projects">Projects</a><br>
-                <a href="#resume">Resume</a><br>
-                <a href="#blog">Blog</a><br>
+                <a class="footerDiv-elements" href="#about">About</a><br>
+                <a class="footerDiv-elements" href="#testimony">Client Testimonials</a><br>
+                <a class="footerDiv-elements" href="#projects">Projects</a><br>
+                <a class="footerDiv-elements" href="#resume">Resume</a><br>
+                <a class="footerDiv-elements" href="#blog">Blog</a><br>
                 Built with Curiosity by Srikanth Reddy <br>
                 &#169 2023 SRedCodes  
             </div>
