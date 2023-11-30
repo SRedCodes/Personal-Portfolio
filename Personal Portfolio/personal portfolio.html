@@ -23,7 +23,7 @@
                     <a class="navBar-LinkElements" href="#contact-me">Contact</a>
                 </div>
             </nav>
-            <div id="hero-section">
+            <div class="articleMajor" id="hero-section">
                 <h2 id="name">I'm Srikanth Reddy</h2>
                 <h2 id="job-role">Frontend Developer</h2>
                 <!-- <hr> -->
@@ -31,7 +31,7 @@
         </header>
         <main>
            
-            <article id="about">
+            <article class="articleMajor" id="about">
              <h2>About Me</h2>
                     <div id="about-Outer-Div">
                         <div id="innerDivOne">
@@ -60,16 +60,24 @@
                                         <td>srika.kodes@gmail.com</td>
                                     </tr>
                                     <tr>
+                                        <td><strong>LinkedIn :</strong> </td>
+                                        <td><a href="https://www.linkedin.com/">srika.kodes</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Github :</strong></td>
+                                        <td><a href="https://github.com/SRedCodes">SRedCodes</a></td>
+                                    </tr>
+                                    <tr>
                                         <td><strong>Phone No. :</strong> </td>
                                         <td> 85229xxxxx</td>
-                                    </tr>  
+                                    </tr>
                                 </table>
                             </div>
                             <div>
                             <table>
                                 <tr>
                                     <td><strong>Skills :</strong></td>
-                                    <td><em><strong>HTML, CSS , Javascript , ReactJS </strong></em></td>
+                                    <td><em><strong> <img src="Img/html5icon.svg" alt="HTML" title="HTML"> HTML , <img src="Img/css3icon.svg" alt="CSS" title="CSS"> CSS , <img src="Img/Javascripticon.png" alt="Javascript" title="Javascript"> Javascript , <img src="Img/reactJSicon.svg" alt="ReactJS" title="ReactJS"> ReactJS </strong></em></td>
                                 </tr>
                                 <tr>
                                     <td><strong>Education :</strong></td>
@@ -95,7 +103,7 @@
                 <!-- <hr> -->
             </article>
             
-            <article id="testimony">
+            <article class="articleMajor" id="testimony">
                 <h2>Client Testimonials</h2>
                 <div id="flexDiv-testimony">
                     <div class="div-clientTestimony">
@@ -163,7 +171,7 @@
                     <hr>
             </article> -->
             
-            <article id="blog">
+            <article class="articleMajor" id="blog">
             <h2>Blog & Recent Activities</h2>
                 <div id="divBlog">
                     <section id="projects">
@@ -180,44 +188,47 @@
                     </section>
                 </div>
             </article>
-            <article id="contact-me">
-                <section>
-                <div id="message-us">
-                    <form action="https://httpbin.org/post" method="post">
-                        <h3>Write to Us</h3>
-                        <p>
-                            <label for="clientName" ></label>
-                            <input type="text" id="clientName" name="clientName" placeholder="Name" size="48">
-                        </p>
-                        <p>
-                            <label for="Email" ></label>
-                            <input type="text" id="Email" name="Email" placeholder="Email" size="48">
-                        </p>
-                        <p>
-                            <label for="Subject" ></label>
-                            <input type="text" id="Subject" name="Subject" placeholder="Subject" size="48">
-                        </p>
-                        <p>
-                            <label for="Message" ></label>
-                            <textarea type="text" id="Message" name="Message" placeholder="Message" rows="10" cols="50"></textarea>
-                        </p>
-                        <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Submit</button>
-                    </form>
+            <article class="articleMajor">
+                <h2>Connect with Us</h2>
+                <div id="contact-me">
+                    <section>
+                    <div id="message-us">
+                        <form action="https://httpbin.org/post" method="post">
+                            <h3>Write to Us</h3>
+                            <p>
+                                <label for="clientName" ></label>
+                                <input type="text" id="clientName" name="clientName" placeholder="Name" size="48">
+                            </p>
+                            <p>
+                                <label for="Email" ></label>
+                                <input type="text" id="Email" name="Email" placeholder="Email" size="48">
+                            </p>
+                            <p>
+                                <label for="Subject" ></label>
+                                <input type="text" id="Subject" name="Subject" placeholder="Subject" size="48">
+                            </p>
+                            <p>
+                                <label for="Message" ></label>
+                                <textarea type="text" id="Message" name="Message" placeholder="Message" rows="10" cols="50"></textarea>
+                            </p>
+                            <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Submit</button>
+                        </form>
+                    </div>
+                    </section>
+                    <section>
+                    <div id="get-in-touch">
+                        <h3>Get in Touch</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex consequuntur labore error quo dolore et vitae rem expedita voluptatibus molestias consequatur pariatur vel asperiores odio in architecto, animi minima! Quibusdam.</p>
+                            <address>123 washington dc, USA, 503213</address>
+                            <div>(123) 123-1234</div>
+                            <div>contact@gmail.com</div>
+                            <a class="contact-tiles" href="https://www.facebook.com/">fb</a>
+                            <a class="contact-tiles" href="https://www.instagram.com/">insta</a>
+                            <a class="contact-tiles" href="https://www.linkedin.com/">LinkedIn</a>
+                            <a class="contact-tiles" href="https://twitter.com/">Twitter</a>
+                    </div>
+                    </section>
                 </div>
-                </section>
-                <section>
-                <div id="get-in-touch">
-                    <h3>Get in Touch</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex consequuntur labore error quo dolore et vitae rem expedita voluptatibus molestias consequatur pariatur vel asperiores odio in architecto, animi minima! Quibusdam.</p>
-                        <address>123 washington dc, USA, 503213</address>
-                        <div>(123) 123-1234</div>
-                        <div>contact@gmail.com</div>
-                        <a class="contact-tiles" href="https://www.facebook.com/">fb</a>
-                        <a class="contact-tiles" href="https://www.instagram.com/">insta</a>
-                        <a class="contact-tiles" href="https://www.linkedin.com/">LinkedIn</a>
-                        <a class="contact-tiles" href="https://twitter.com/">Twitter</a>
-                </div>
-                </section>
             </article>
         
         </main>
