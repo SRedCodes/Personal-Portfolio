@@ -114,16 +114,11 @@ h3{
     flex-direction: row;
     justify-content: space-evenly;
 }
-.contact-tiles{
-    background-color: chocolate;
-    border: 1px solid rgb(50, 135, 230);
-    border-radius: 50px;
-}
-#contact-me{
+/* #contact-me{
     display: flex;
     flex-direction: row;
-    justify-content: space-around; 
-}
+    justify-content:space-around; 
+} */
 #get-in-touch{
     width: 30vw;
     line-height: 2;
