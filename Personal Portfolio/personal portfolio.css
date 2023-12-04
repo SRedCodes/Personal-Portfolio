@@ -11,43 +11,40 @@ body{
 
 nav{
     font-weight: 400;
-    height: 8vh;
+    height: 8%;
+    width: 100%;
     background-color: #f5f5f5;
     font-size: 1rem;
     position: fixed;
     top: 0px;
-    width: 100vw;
     z-index: 9999;
     box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
 }
 
 #navLogo{
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: 600;
     text-decoration: none;
-    margin-right: 500px;
+    margin-right: 50%;
+    padding-top: 5px;
 }
 
 .navBar-LinkElements{
-    height: fit-content;
     text-transform: uppercase;
     font-weight: 600;
     text-decoration: none;
-
 }
 
 #nav-bar{
-    display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
-    align-items:baseline;
+    align-items:center;
 }
 #hero-section{
     text-align: center;
-    font-size: 60px;
+    font-size: 4rem;
     position: relative;
     font-weight: 900;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -80,18 +77,18 @@ h3{
 
 img{
     border-radius: 5%;
+    max-width:100% ;
+
 }
 
 .intro-work-tiles{
-    height: 100px;
-    width: 100px;
+    min-height: 6rem;
+    max-width: 6rem;
     padding: 5px;
-    margin: 20px;
+    margin: 1.5rem;
     border-radius: 20px;
     text-align: center;
     box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
-    display: flex;
-    flex-direction: row;
     align-items: center;
     transition-property: box-shadow;
     transition-duration: 0.2s;
@@ -104,12 +101,11 @@ img{
 }
 
 #intro-work-tiles{
-    display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
 }
 td{
-    height: 40px;
+    height: 2.5rem;
+    width: auto;
     vertical-align:auto ;
     border: 2px solid transparent;
     box-shadow: 0px 0px 5px 0.5px rgba(0, 0, 0, 0.05);
@@ -117,99 +113,53 @@ td{
 
 #innerDivOne{
     background-color: #ffffff;
-    width: 50vw;
-    padding: 40px;
-    display: flex;
+    width: 50%;
+    padding: 2.5rem;
     flex-direction: column;
-    justify-content: space-around;
 }
 
 #innerDivTwo{
     background-color:#ffffff;
-    width: 50vw;
-    padding: 40px;
+    width: 50%;
+    padding: 2.5rem;
 }
 
 #about-Outer-Div{
     display: flex;
     box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
-    margin: 50px;
+    margin: 3rem;
 }
 
-#innerDiv-bioDiv{
+#flexDiv-testimony , #divProjects , #divBlog , #contact-me{
+    margin: 3rem;
+    padding: 2.5rem;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+}
+
+.div-clientTestimony{
+    justify-content: center;
+}
+
+.flex-container{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-/* #innerDiv-biotextDiv{
-    line-height: 2.5;
-} */
-#flexDiv-testimony{
-    background-color: #ffffff;
-    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
-    border-radius: 25px;
-    margin: 50px;
-    padding: 40px;
-}
-
-.div-clientTestimony{
-    display: flex;
-    flex-direction:row;
-    justify-content: center;
-}
-
-#divProjects{
-    margin: 50px;
-    padding: 40px;
-    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
-    background-color: #ffffff;
-    border-radius: 25px;
-}
-
-#divBlog{
-
-    margin: 50px;
-    padding: 40px;
-    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
-    background-color:#ffffff ;
-    border-radius: 25px;
-}
-/* #contact-me{
-    display: flex;
-    flex-direction: row;
-    justify-content:space-around; 
-} */
-
-
-#contact-me{
-    margin: 50px;
-    padding: 40px;
-    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
-    background-color: #ffffff;
-    border-radius: 25px;
-
-}
 #get-in-touch{
-    width: 30vw;
+    width: 100%;
     line-height: 2;
     /* border: 1px solid black; */
 }
 
 #message-us{
-    line-height: 2.5;
+    line-height: 2;
 }
-/* input{
-    height: 25px;
-} */
 
-/* button{
-    height: 30px;
-    width: 100px;
-    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
-} */
 .articleMajor{
-    height: 100vh;
+    min-height: 100vh;
 }
 
 footer{
@@ -222,4 +172,14 @@ footer{
 
 .footerDiv-elements{
     color: white;
+}
+@media screen and (max-width:768px) {
+    .flex-container{
+
+        flex-direction: column;
+    }
+    #nav-bar{
+        flex-direction: row;
+        justify-content:space-around;
+    }
 }
