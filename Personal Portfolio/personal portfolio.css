@@ -11,7 +11,7 @@ body{
 
 nav{
     font-weight: 400;
-    height: 8%;
+    min-height: fit-content;
     width: 100%;
     background-color: #f5f5f5;
     font-size: 1rem;
@@ -26,7 +26,8 @@ nav{
     font-weight: 600;
     text-decoration: none;
     margin-right: 50%;
-    padding-top: 5px;
+    margin-left: auto;
+    padding: 8px;
 }
 
 .navBar-LinkElements{
@@ -34,6 +35,7 @@ nav{
     font-weight: 600;
     text-decoration: none;
     margin: auto;
+    padding: 5px;
 }
 
 #nav-bar{
@@ -85,15 +87,13 @@ img{
     min-height: 6rem;
     max-width: 6rem;
     padding: 5px;
-    margin: 1.5rem;
+    margin: auto;
+    margin-top: 6rem;
     border-radius: 20px;
     text-align: center;
     box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
     align-items: center;
     transition: box-shadow 0.5s ease-in;
-
-
-    
 }
 
 .intro-work-tiles:hover{
@@ -115,14 +115,14 @@ td{
 
 #innerDivOne{
     background-color: #ffffff;
-    width: 50%;
+    width: auto;
     padding: 2.5rem;
     flex-direction: column;
 }
 
 #innerDivTwo{
     background-color:#ffffff;
-    width: 50%;
+    width: auto;
     padding: 3rem 2.5rem 2.5rem 2.5rem;
 }
 
@@ -177,10 +177,19 @@ footer{
 }
 
 /* || Media for Responsiveness */
-/* @media screen and (max-width:1024px) {
+@media screen and (max-width:1024px) {
 
+    #navLogo{
+        margin-right:45%;
+        margin-left: auto;
+        font-size: 1.5rem;
+    }
+    .navBar-LinkElements{
+        font-size: small;
+        margin: auto;
+    }
     
-} */
+}
 
 @media screen and (max-width:768px) {
     .flex-container{
@@ -190,11 +199,69 @@ footer{
         flex-direction: row;
     }
     #navLogo{
-        margin-right: 35%;
+        font-size: 1.5rem;
+        margin-right:35% ;
+        margin-left:auto ;
     }
     .navBar-LinkElements{
-        font-size: smaller;
+        font-size: small;
         margin: auto;
+    }
+    #intro-work-tiles{
+        flex-direction: row;
     }
 
 }
+@media screen and (max-width:425px) {
+
+    #navLogo{
+        font-size: 1.25rem;
+        margin-right:auto ;
+    }
+    .navBar-LinkElements{
+        font-size: smaller;
+        padding: 2px;
+    }
+    main , nav{
+        font-size:small;
+    }
+    #hero-section{
+        font-size: 2rem;
+    }
+    .intro-work-tiles{
+        margin-right: 2.5px;
+        margin-left: 2.5px;
+    }
+    #flexDiv-testimony , #divProjects , #divBlog , #contact-me{
+        margin: 1rem;
+        padding: 0.75rem;
+    }
+    #about-Outer-Div{
+        margin: 1rem;
+    }
+}
+/* @media screen and (max-width:375px) {
+    main , nav{
+        font-size: smaller;
+    }
+    .intro-work-tiles{
+        margin-right: 2.5px;
+        margin-left: 2.5px;
+    }
+    #flexDiv-testimony , #divProjects , #divBlog , #contact-me{
+        margin: 1.25rem;
+        padding: 1rem;
+    } 
+} */
+/* @media screen and (max-width:320px) {
+    nav ,main{
+        font-size:x-small;
+    }
+    #navLogo{
+        font-size: 1rem;
+    }
+    #hero-section{
+        font-size:1.75rem ;
+    }
+    
+} */
