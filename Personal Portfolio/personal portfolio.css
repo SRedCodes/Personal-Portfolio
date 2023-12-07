@@ -240,7 +240,7 @@ footer{
         margin: 1rem;
     }
 }
-/* @media screen and (max-width:375px) {
+@media screen and (max-width:375px) {
     main , nav{
         font-size: smaller;
     }
@@ -251,8 +251,8 @@ footer{
     #flexDiv-testimony , #divProjects , #divBlog , #contact-me{
         margin: 1.25rem;
         padding: 1rem;
-    } 
-} */
+    }
+}
 /* @media screen and (max-width:320px) {
     nav ,main{
         font-size:x-small;
