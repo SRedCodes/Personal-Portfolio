@@ -1,57 +1,47 @@
 //rock paper scissors
 let playGame = confirm("let's Play a game of rock , paper, scissors");
-if(playGame === true){
-   let playerOne = prompt("PLAYER'S Choice :");
-   let playerChoice = playerOne.trim().toLowerCase();
-   if(playerChoice==="rock" ||playerChoice==="paper" || playerChoice==="scissors")
-   {
-        // generating random response for Computer
-            let computer = Math.floor(Math.random()*3);
-                if(computer === 0)
-                {
-                    computerChoice ="rock";
-                }
-                else if( computer === 1)
-                {
-                    computerChoice ="scissors";
-                }
-                else{
-                    computerChoice = "paper";
-                }
-
-        if(playerChoice){
-                console.log(`PLAYER chose: ${playerChoice}`);
-                console.log(`COMPUTER chose: ${computerChoice}`);
-                switch(playerChoice){
-                    
+if(playGame){
+    while(playGame){
+        let playerOne = prompt("PLAYER'S Choice :");
+        if(playerOne || playerOne === ""){
+            let playerChoice = playerOne.trim().toLowerCase();
+            if(playerChoice==="rock" || playerChoice==="paper" || playerChoice==="scissors"){
+                const arrayIndex = Math.floor(Math.random()*3);
+                const computerArray = ["rock" , "paper" , "scissors"];
+                const computerChoice= computerArray[arrayIndex];
+                console.log(`computer array choice : ${computerChoice}`);
+                alert(`PLAYER chose: ${playerChoice}\nCOMPUTER chose: ${computerChoice}`);
+                switch(playerChoice){ 
                     case(computerChoice):
-                        console.log("Tie Game !");
-                        break;
-                    
+                        alert("Tie Game !"); break;
                     case "rock":
-                        computerChoice=== "paper" ? console.log("Computer wins!"):
-                        console.log("Player Wins !");
-                        break;
-                    
+                        computerChoice=== "paper" ? alert("COMPUTER wins!"):
+                        alert("PLAYER Wins !"); break;
                     case "scissors":
-                        computerChoice=== "rock" ? console.log("Computer wins!"):
-                        console.log("Player Wins !");
-                        break;
-                    
+                        computerChoice=== "rock" ? alert("COMPUTER wins!"):
+                        alert("PLAYER Wins !");break;
                     default:
-                        computerChoice=== "scissors" ? console.log("Computer wins!"):
-                        console.log("Player Wins !");
-                        break;
+                        computerChoice=== "scissors" ? alert("COMPUTER wins!"):
+                        alert("PLAYER Wins !");break;
                 }
+            }
+            else{
+                alert("Please enter Valid response");
+                continue;
+            }
+            playGame = confirm("Play Again ?");
+            if(playGame){
+                continue;
+            }
+            else{
+                alert("thankyou for Playing");
+            }
         }
         else{
-            alert("Player did not choose a value");
+            alert("okay Maybe next Time !");
+            break;
         }
-   }
-   else{
-    console.log("PLAYER  did not choose a Valid Response");
-   }
-
+    }
 }
 else{
     alert("okay , maybe next time !");
