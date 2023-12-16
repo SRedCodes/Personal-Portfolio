@@ -37,7 +37,7 @@ function playGame(){
         }
 
 const formatPlayerChoice = (playerChoice) =>{
-    if(playerChoice){
+    if(playerChoice ||playerChoice === ""){
         return playerChoice.trim().toLowerCase();
     }
     else{
@@ -75,9 +75,9 @@ const abandonPlay = () =>{
 }
 const computeResult = (playerChoice,computerChoice) =>{
     let result = playerChoice === computerChoice ? "Tie Game !" :
-    playerChoice ==="rock" && computerChoice ==="paper" ? "computer Wins !":
-    playerChoice ==="paper" && computerChoice ==="scissors" ? "computer Wins !":
-    playerChoice ==="scissors" && computerChoice ==="rock" ? "computer Wins !":"Player Wins !";
+    playerChoice ==="rock" && computerChoice ==="paper" ? "COMPUTER Wins !":
+    playerChoice ==="paper" && computerChoice ==="scissors" ? "COMPUTER Wins !":
+    playerChoice ==="scissors" && computerChoice ==="rock" ? "COMPUTER Wins !":"PLAYER Wins !";
     return result;
     
 }
