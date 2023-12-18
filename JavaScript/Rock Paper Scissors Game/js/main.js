@@ -37,7 +37,7 @@ function playGame(){
         }
 
 const formatPlayerChoice = (playerChoice) =>{
-    if(playerChoice ||playerChoice === ""){
+    if(playerChoice || playerChoice === ""){
         return playerChoice.trim().toLowerCase();
     }
     else{
@@ -66,7 +66,7 @@ const evaluatePlayerChoice = (playerChoice) =>{
         return playerChoice;
     }
     else{
-        return "";
+        return false;
     }
 
 }
