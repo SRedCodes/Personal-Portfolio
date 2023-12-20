@@ -67,9 +67,9 @@ const newLayout = (parent ,num)=>{
        newDiv.style.alignItems = "center";
        parent.append(newDiv);
 }
-// for(i = 1 ; i <=12 ; i++){
-//     newLayout(view2,i);
-// }
+for(i = 1 ; i <=12 ; i++){
+    newLayout(view2,i);
+}
 
 
 
