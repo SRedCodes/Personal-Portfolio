@@ -5,7 +5,7 @@ click:
 mouseover:
 mouseout:
 submit:
-change:*/
+change: etc..*/
 
 //selecting a view//
 const view = document.querySelector("#view2");
@@ -32,12 +32,18 @@ view3.style.display = "flex";
 //     event.target.textContent ="clicked";
 // })
 
-document.onreadystatechange = () =>{ //  onreadystatechange defines a function to be executed when readyState changes(loading /interactive/ complete)
-    if(document.readyState === "complete"){ //readyState retrives a value that indicates the state of document.
+document.onreadystatechange = () =>{ //  onreadystatechange defines a function to be executed when readyState is changed.
+    if(document.readyState === "complete"){ //readyState retrives a value that indicates the state(loading /interactive/ complete) of document.
         console.log("ready state completed");
         initApp();
     }
 }
+
+/*HTML document has multiple states:
+loading --> html doc is not loaded and parsed
+interactive --> html doc is loaded and parsed i.e DOM tree is loaded however the supporting scripts,images,stylesheets are still loading, this indiacted "DOMContentLoaded" event is about to fire.
+complete --> html doc and all supporting scripts ,images, stylesheets are loaded and "load" event is about to fire.
+*/
 
 const initApp = ()=>{
     const div  = view.querySelector("div");
