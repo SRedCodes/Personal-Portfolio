@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="personal portfolio.css">
         <link rel="icon" href="Img/react icon.png">
         <Title>Srikanth's Portfolio</Title>
-
+        <script defer src="personal portfolio.js"></script>
     </head>
     <body>
         <!--Home Page-->
@@ -19,7 +19,7 @@
                     <a class="navBar-LinkElements" href="#testimony">Testimonials</a>
                     <a class="navBar-LinkElements" href="#projects">Projects</a>
                     <a class="navBar-LinkElements" href="#blog-section">Blog</a>
-                    <a class="navBar-LinkElements" href="#contact-me">Contact</a>
+                    <a class="navBar-LinkElements" href="#contact-section">Contact</a>
                 </div>
             </nav>
             <div class="articleMajor" id="hero-section" class="flex-container">
@@ -124,10 +124,10 @@
                 <!-- <hr> -->
             </article>
             
-            <article class="articleMajor">
+            <article id="projects" class="articleMajor">
             <h2>Projects</h2>
                 <div id="divProjects">
-                    <section id="projects">
+                    <section >
                         <h3>Projects Handled</h3>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat repellendus blanditiis est quis quisquam voluptatem architecto laudantium ipsam culpa. Incidunt, nobis. Sunt esse voluptate cumque aspernatur culpa? Dignissimos, non velit?<br>
                             Perferendis quis odit eos illo, obcaecati dolorem dignissimos earum! Nam similique ut eveniet illum vero laudantium corporis incidunt maxime at sed earum cum iste cumque, dolor repellendus quo, aut minima?<br>
@@ -135,10 +135,10 @@
                     </section>
                 </div>
             </article>
-            <article class="articleMajor">
+            <article class="articleMajor" id="blog-section">
                 <h2>Blogs & Certifications</h2>
                 <div id="divBlog">
-                    <section id="blog-section">
+                    <section>
                         <h3>Certifications</h3>
                         <p> <img src="Img/istqb-logo.jpg" alt="istqb-logo"> International Software Testing Qualifications Board(ISTQB) Certified Tester in Foundation Level Certificate No. : 71877</p><br>
                     </section>
@@ -148,33 +148,37 @@
                     </section>
                 </div>
             </article>
-            <article class="articleMajor">
+            <article class="articleMajor" id="contact-section">
                 <h2>Connect with Us</h2>
                 <div id="contact-me">
-                    <!-- <section>
-                    <div id="message-us">
+                    <section>
+                    <div id="contact-form">
                         <form action="https://httpbin.org/post" method="post">
                             <h3>Write to Us</h3>
                             <p>
                                 <label for="clientName" ></label>
                                 <input type="text" id="clientName" name="clientName" placeholder="Name" size="48">
+                                <p class="cName"> enter valid name</p>
                             </p>
                             <p>
                                 <label for="Email" ></label>
                                 <input type="text" id="Email" name="Email" placeholder="Email" size="48">
+                                <p class="cMail"> enter valid email address</p>
                             </p>
                             <p>
                                 <label for="Subject" ></label>
                                 <input type="text" id="Subject" name="Subject" placeholder="Subject" size="48">
+                                <p class="cSubject"> don't exceed more than 20 words</p>
                             </p>
                             <p>
                                 <label for="Message" ></label>
                                 <textarea type="text" id="Message" name="Message" placeholder="Message" rows="10" cols="50"></textarea>
+                                <p class="cMessage">don't exceed more than 50 words</p>
                             </p>
                             <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Submit</button>
                         </form>
                     </div>
-                    </section> -->
+                    </section>
                     <section>
                     <div id="get-in-touch">
                         <h3>Get in Touch</h3>
