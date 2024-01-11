@@ -157,23 +157,23 @@
                             <h3>Write to Us</h3>
                             <p>
                                 <label for="clientName" ></label>
-                                <input type="text" id="clientName" name="clientName" placeholder="Name" size="48">
-                                <p class="cName"> enter valid name</p>
+                                <input type="text" id="clientName" name="clientName" placeholder="Name" required autocomplete="off">
+                                <p class="cName">example:&lt;first_name&gt;&lt;space&gt;&lt;last_name&gt;</p>
                             </p>
                             <p>
-                                <label for="Email" ></label>
-                                <input type="text" id="Email" name="Email" placeholder="Email" size="48">
+                                <label for="email" ></label>
+                                <input type="email" id="email" name="email" placeholder="email" required autocomplete="off">
                                 <p class="cMail"> enter valid email address</p>
                             </p>
                             <p>
-                                <label for="Subject" ></label>
-                                <input type="text" id="Subject" name="Subject" placeholder="Subject" size="48">
-                                <p class="cSubject"> don't exceed more than 20 words</p>
+                                <label for="subject" ></label>
+                                <input type="text" id="subject" name="subject" placeholder="subject"  required>
+                                <p class="cSubject" autocomplete="off"> don't exceed more than 20 words</p>
                             </p>
                             <p>
-                                <label for="Message" ></label>
-                                <textarea type="text" id="Message" name="Message" placeholder="Message" rows="10" cols="50"></textarea>
-                                <p class="cMessage">don't exceed more than 50 words</p>
+                                <label for="message" ></label>
+                                <textarea type="text" id="message" name="message" placeholder="message" required autocomplete="off"></textarea>
+                                <p class="cMessage">don't exceed more than 150 words</p>
                             </p>
                             <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Submit</button>
                         </form>
@@ -194,7 +194,6 @@
             </article>
         
         </main>
-        
         <footer>
             <div>
                 <a class="footerDiv-elements" href="#about">About</a><br>
