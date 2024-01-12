@@ -1,31 +1,30 @@
 const navigationBar = document.getElementById("nav-bar");
-const navBarHeight = navigationBar.offsetHeight ;
-console.log(navBarHeight);
+const navBarHeight = navigationBar.offsetHeight;
 document.documentElement.style.setProperty("scroll-padding",navBarHeight + "px"); /* figures out height on nav container & converts it into pixels for scroll padding*/
 
-/*Form Validations */
-const clientNameRegEx = /^(([a-zA-z]+[ ]*[a-zA-z]+)/g;
-const emailRegEx = /^([A-Za-z0-9]+@[a-zA-Z]+\.com)/g;
-const subjectRegEx = /^(\b\w+\b[ ,.&]*){1,20}$/g;
-const messageRegEx = /^(?:\b\w+\b[\s\r\n]*){1,50}$/g;
-
-const formatCheck = (fieldID,regExFormat,formatClass)=>{
-document.getElementById(fieldID).addEventListener("input",(event)=>{
-    const userInput = document.getElementById(fieldID);
-    const formatHint = document.querySelector(formatClass);
-    const flag = regExFormat.test(userInput.value);
-    if(!flag){
-        formatHint.classList.add("block");
+/* Contact Form Validations using Regex*/
+const nameRegex = /^([a-zA-Z]{2,}\s[a-zA-z]{1,}'?([a-zA-Z]{1,})?)/;
+const emailRegex = /^([a-zA-Z0-9._]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,})/;
+const subjectRegex = /^(?:\b\w+\b[\s\r\n,.]*){1,20}$/;
+const messageRegex = /^(?:\b\w+\b[\s\r\n,.]*){1,150}$/;
+const formatChecker = (inputID,regex,hintClass)=>{
+document.getElementById(inputID).addEventListener("input",(event)=>{
+    const input = document.getElementById(inputID);
+    const formatHint = document.getElementsByClassName(hintClass)[0];
+    const field = input.value;
+    const found = regex.test(field);
+    if(!found && field.length){
+        input.classList.add("invalid");
         formatHint.classList.add("invalid");
+        formatHint.classList.add("block");
     }else{
-        formatHint.classList.remove("block");
+        input.classList.remove("invalid");
         formatHint.classList.remove("invalid");
+        formatHint.classList.remove("block");
     }
 });
-};
-
-formatCheck("clientName",clientNameRegEx,".cName");
-formatCheck("Email",emailRegEx,".cMail");
-formatCheck("Subject",subjectRegEx,".cSubject");
-formatCheck("Message",messageRegEx,".cMessage");
-
+}
+formatChecker("clientName",nameRegex,"cName");
+formatChecker("email",emailRegex,"cMail");
+formatChecker("subject",subjectRegex,"cSubject");
+formatChecker("message",messageRegex,"cMessage");
