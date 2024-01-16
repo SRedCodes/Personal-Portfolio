@@ -13,13 +13,22 @@
         <!--Home Page-->
         <header>
             <nav>
+                <div id="sidebar" class="flex-container">
+                    <a onclick=hideSideBar() class="sideBar-LinkElements" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/ fill="#3286e6"></svg></a>
+                    <a class="sideBar-LinkElements" href="#about">About</a>
+                    <a class="sideBar-LinkElements" href="#testimony">Testimonials</a>
+                    <a class="sideBar-LinkElements" href="#projects">Projects</a>
+                    <a class="sideBar-LinkElements" href="#blog-section">Blog</a>
+                    <a class="sideBar-LinkElements" href="#contact-section">Contact</a>
+                </div>
                 <div id="nav-bar" class="flex-container">
                     <a id="navLogo" href="#">SRedCodes</a>
-                    <a class="navBar-LinkElements" href="#about">About</a>
-                    <a class="navBar-LinkElements" href="#testimony">Testimonials</a>
-                    <a class="navBar-LinkElements" href="#projects">Projects</a>
-                    <a class="navBar-LinkElements" href="#blog-section">Blog</a>
-                    <a class="navBar-LinkElements" href="#contact-section">Contact</a>
+                    <a class="navBar-LinkElements hideOnMobile" href="#about">About</a>
+                    <a class="navBar-LinkElements hideOnMobile" href="#testimony">Testimonials</a>
+                    <a class="navBar-LinkElements hideOnMobile" href="#projects">Projects</a>
+                    <a class="navBar-LinkElements hideOnMobile" href="#blog-section">Blog</a>
+                    <a class="navBar-LinkElements hideOnMobile" href="#contact-section">Contact</a>
+                    <a onclick=showSideBar() class="navBar-LinkElements menuBar" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 860" width="24" fill="#3286e6"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
                 </div>
             </nav>
             <div class="articleMajor" id="hero-section" class="flex-container">
@@ -158,22 +167,22 @@
                             <p>
                                 <label for="clientName" ></label>
                                 <input type="text" id="clientName" name="clientName" placeholder="Name" required autocomplete="off">
-                                <p class="cName">example:&lt;first_name&gt;&lt;space&gt;&lt;last_name&gt;</p>
+                                <p class="cName"><em>example: &lt;first_name&gt;&lt;space&gt;&lt;last_name&gt;</em></p>
                             </p>
                             <p>
                                 <label for="email" ></label>
                                 <input type="email" id="email" name="email" placeholder="email" required autocomplete="off">
-                                <p class="cMail"> enter valid email address</p>
+                                <p class="cMail"><em>enter valid email address</em></p>
                             </p>
                             <p>
                                 <label for="subject" ></label>
-                                <input type="text" id="subject" name="subject" placeholder="subject"  required>
-                                <p class="cSubject" autocomplete="off"> don't exceed more than 20 words</p>
+                                <input type="text" id="subject" name="subject" placeholder="subject"  required autocomplete="off">
+                                <p class="cSubject"><em>don't exceed more than 20 words</em></p>
                             </p>
                             <p>
                                 <label for="message" ></label>
                                 <textarea type="text" id="message" name="message" placeholder="message" required autocomplete="off"></textarea>
-                                <p class="cMessage">don't exceed more than 150 words</p>
+                                <p class="cMessage"><em>don't exceed more than 150 words</em></p>
                             </p>
                             <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Submit</button>
                         </form>

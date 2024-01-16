@@ -28,3 +28,12 @@ formatChecker("clientName",nameRegex,"cName");
 formatChecker("email",emailRegex,"cMail");
 formatChecker("subject",subjectRegex,"cSubject");
 formatChecker("message",messageRegex,"cMessage");
+
+function showSideBar(){
+    const sideBar = document.getElementById("sidebar");
+    sideBar.style.display = "flex";
+}
+function hideSideBar(){
+    const sideBar = document.getElementById("sidebar");
+    sideBar.style.display = "none";
+}
