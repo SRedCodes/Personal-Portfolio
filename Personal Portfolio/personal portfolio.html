@@ -14,7 +14,7 @@
         <header>
             <nav>
                 <div id="sidebar" class="flex-container">
-                    <a onclick=hideSideBar() class="sideBar-LinkElements" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/ fill="#3286e6"></svg></a>
+                    <a onclick=hideSideBar() class="sideBar-LinkElements"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/ fill="#3286e6"></svg></a>
                     <a class="sideBar-LinkElements" href="#about">About</a>
                     <a class="sideBar-LinkElements" href="#testimony">Testimonials</a>
                     <a class="sideBar-LinkElements" href="#projects">Projects</a>
@@ -28,7 +28,7 @@
                     <a class="navBar-LinkElements hideOnMobile" href="#projects">Projects</a>
                     <a class="navBar-LinkElements hideOnMobile" href="#blog-section">Blog</a>
                     <a class="navBar-LinkElements hideOnMobile" href="#contact-section">Contact</a>
-                    <a onclick=showSideBar() class="navBar-LinkElements menuBar" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 860" width="24" fill="#3286e6"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+                    <a onclick=showSideBar() class="navBar-LinkElements menuBar"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 860" width="24" fill="#3286e6"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
                 </div>
             </nav>
             <div class="articleMajor" id="hero-section" class="flex-container">
@@ -46,13 +46,6 @@
                                 <div>
                                     <img src="Img/SR Profile Picture.JPG"  width="150" height="190"/>
                                 </div>
-                                <!-- <div id="innerDiv-biotextDiv">
-                                    <p><strong>Name</strong> : Srikanth Reddy</p>
-                                    <p><strong>Job Profile</strong> : Frontend Developer</p>
-                                    <p><strong>Email</strong> : srika.kodes@gmail.com</p>
-                                    <p><strong>Phone</strong> : 85229xxxxx</p>
-                                    <p><strong>twitter</strong> : <a href="https://twitter.com/">Sample_tw</a></p>
-                                </div> -->
                                 <table>
                                     <tr>
                                         <td><strong>Name :</strong></td> 
@@ -107,30 +100,37 @@
                             </div>
                         </div>
                     </div>
-                <!-- <hr> -->
             </article>
             
             <article class="articleMajor" id="testimony">
                 <h2>Client Testimonials</h2>
                 <div id="flexDiv-testimony">
-                    <div class="div-clientTestimony" class="flex-container">
+                    <div class="div-clientTestimony" id="testimony1" class="flex-container">
                         <figure>
-                            <img src="Img/SR Profile Picture.JPG" width="150" height="190" alt="client photo" loading="lazy"/>
-                            <figcaption>Srikanth Reddy</figcaption>
+                            <img src="Img/SR pictureTestimony.JPG" width="149" height="149" alt="client photo" loading="lazy"/>
+                            <p><b>Srikanth Reddy</b></p>
                         </figure>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi unde, quis omnis quisquam in quibusdam hic qui beatae excepturi autem saepe veritatis consectetur animi a praesentium magni. Distinctio, quaerat obcaecati!</p>
-                            <img src="Img/quotation marks.png" width="50" height="47" alt="quotation mark" loading="lazy"/><br>
+                            <p><svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48" fill="#3286e6"><path d="m228-240 92-160q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 23-5.5 42.5T458-480L320-240h-92Zm360 0 92-160q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 23-5.5 42.5T818-480L680-240h-92Z"/></svg></p>
                     </div>
-                    <div class="div-clientTestimony" class="flex-container">
+                    <div class="div-clientTestimony" id="testimony2" class="flex-container">
                         <figure>
-                            <img src="Img/SR Profile Picture.JPG" width="150" height="190" alt="client photo" loading="lazy"/>
-                            <figcaption>Srikanth Reddy</figcaption>
+                            <img src="Img/SR pictureTestimony.JPG" width="149" height="149" alt="client photo" loading="lazy"/>
+                            <p><b>Prashanth Reddy</b></p>
                         </figure>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla voluptatibus numquam omnis inventore repellendus a, doloremque rem voluptatum officia sapiente fugiat fugit doloribus facere libero reprehenderit tenetur odio dolor iure?</p>
-                            <img src="Img/quotation marks.png" width="50" height="47" alt="quotation mark" loading="lazy"/>
+                            <p><svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48" fill="#3286e6"><path d="m228-240 92-160q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 23-5.5 42.5T458-480L320-240h-92Zm360 0 92-160q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 23-5.5 42.5T818-480L680-240h-92Z"/></svg></p>
+                    </div>
+                    <div class="radio-btns">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    </div>
+                    <div class ="label-btns">
+                    <label onclick=showTestimonyOne() for="radio1" class="radio-btn" id="radio-btn1"></label>
+                    <label onclick=showTestimonyTwo() for="radio2" class="radio-btn" id="radio-btn2"></label>
                     </div>
                 </div>
-                <!-- <hr> -->
+                
             </article>
             
             <article id="projects" class="articleMajor">
