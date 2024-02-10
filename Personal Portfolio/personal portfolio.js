@@ -37,3 +37,20 @@ function hideSideBar(){
     const sideBar = document.getElementById("sidebar");
     sideBar.style.display = "none";
 }
+const testimonyOne = document.getElementById("testimony1");
+const testimonyTwo = document.getElementById("testimony2");
+const radioBtn1 = document.getElementById("radio-btn1");
+const radioBtn2 = document.getElementById("radio-btn2");
+function showTestimonyOne(){
+    testimonyOne.style.display = "block";
+    testimonyTwo.style.display = "none";
+    radioBtn1.style.backgroundColor = "#3286e6";
+    radioBtn2.style.backgroundColor = "#ffffff";
+
+}
+function showTestimonyTwo(){
+    testimonyOne.style.display = "none";
+    testimonyTwo.style.display = "block";
+    radioBtn2.style.backgroundColor = "#3286e6";
+    radioBtn1.style.backgroundColor = "#ffffff";
+}

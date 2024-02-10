@@ -177,7 +177,6 @@ td{
     padding: 2.5rem;
    
 }
-
 #flexDiv-testimony , #divProjects , #divBlog , #contact-me{
     margin: 3rem;
     padding: 2.5rem;
@@ -185,10 +184,55 @@ td{
     box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
     border-radius: 25px;
 }
-
-.div-clientTestimony{
+#flexDiv-testimony img{
+    border-radius: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#flexDiv-testimony p{
+    margin-left:auto;
+    margin-right:auto;
+    width:fit-content;
+}
+#flexDiv-testimony{
+    position: relative; 
+    display: flex;
+    flex-direction: row;
     justify-content: center;
 }
+.div-clientTestimony{
+    display: none;
+    margin-left: auto ;
+    margin-right: auto;
+}
+.radio-btns{
+    display: none;
+}
+.radio-btn{
+    border: 2px solid rgb(50, 135, 230);
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    cursor: pointer;
+    margin: 5px;
+    padding: 2px;
+    transition: 1s;
+}
+.radio-btn:hover{
+    background-color: rgb(50, 135, 230);
+}
+#testimony1{
+    display: block;
+}
+
+.label-btns{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    bottom: 15px;
+}
+
 
 #get-in-touch{
     width: 100%;
@@ -205,7 +249,7 @@ td{
 #contact-form{
     line-height: 2;
 }
-input{
+#contact-form input{
     box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
     border-radius: 7.5px;
     height: 5vh;
@@ -336,6 +380,13 @@ footer{
     }
     #sidebar{
         width:100%;
+    }
+    .radio-btn{
+        height: 3px;
+        width: 3px;
+    }
+    .label-btns{
+        bottom:8px;
     }
 
 }

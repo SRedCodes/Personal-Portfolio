@@ -1,0 +1,88 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+.nav{
+    height:55px;
+    width:100%;
+    background:#F55A5A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:4px;
+}
+.nav--image{
+    width: 24px;
+    height: 24px;
+    
+}
+.nav--title{
+    margin: 0px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -1.085px;
+}
+.trip{
+    display: flex;
+    margin: 45px 0px 0px 40px; 
+}
+.trip--image{
+    width: 125px;
+    height: 168px;
+    border-radius: 5px;
+}
+.trip--info{
+    margin-left: 20px;
+}
+.trip--locationIcon{
+    width:7px;
+    height: 10px;
+}
+.trip--location{
+    margin-left: 4px;
+    color: #2B283A;
+    font-family: Inter;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 1.741px;
+}
+.trip--mapLink{
+    color: #918E9B;
+    margin-left: 12px;
+    font-family: Inter;
+    font-size: 11px;
+    font-weight: 400;
+    text-decoration-line: underline;
+}
+.trip--title{
+    margin-top:4px; 
+    height: 40px;
+    color: #2B283A;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.trip--date{
+    margin-top: 7px;
+    color: #2B283A;
+    font-family: Inter;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.trip--description{
+    margin-top: 9px;
+    color: #2B283A;
+    font-family: Inter;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
