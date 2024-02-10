@@ -381,6 +381,13 @@ footer{
     #sidebar{
         width:100%;
     }
+    .radio-btn{
+        height: 3px;
+        width: 3px;
+    }
+    .label-btns{
+        bottom:8px;
+    }
 
 }
 @media screen and (max-width:375px) {
