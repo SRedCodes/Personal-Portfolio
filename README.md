@@ -1,2 +1,2 @@
 # Personal-Portfolio
-This Project is Created from Scratch as I learn HTML , CSS , JavaScript. Updates to this project are made as soon as I learn new things to Implement.
+This Project is Created from Scratch to Refresh my core concepts  HTML , CSS , JavaScript
