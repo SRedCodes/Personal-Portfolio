@@ -1,2 +1,2 @@
 # Personal-Portfolio
-This Project is Created from Scratch to Refresh my core concepts  HTML , CSS , JavaScript
+This Project scrappy version of personal Portfolio created to do some handson for   HTML , CSS , JavaScript
